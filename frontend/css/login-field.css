@@ -1,0 +1,44 @@
+:host(.on-focus) [part="label"]{
+      color: black !important;
+      font-weight: bold;
+}
+
+
+:host(.on-mouse-over:hover) [part="input-field"]{
+     background-color: rgba(128, 181, 234, 0.2) !important; 
+}
+
+
+:host(.static-prop) [part="input-field"]{
+     background-color: white; 
+}
+
+
+
+
+:host(.after) [part="input-field"]::after{
+	
+	content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0;
+    background-color: rgba(128, 181, 234, 0.2);
+	transition: transform 0.15s, opacity 0.2s;
+	transform-origin: 50% 50% 0;
+	
+            
+}
+
+:host(.on-mouse-over-nfocused:hover:not([readonly]):not([focused])) [part="input-field"]::after{
+	opacity: 0.1 !important;
+}
+
+:host([focused]:not([focus-ring]):not([readonly])) [part="input-field"]::after{
+	transform: scaleY(0);
+	transition-duration: 5.0s, 5.0s;
+}

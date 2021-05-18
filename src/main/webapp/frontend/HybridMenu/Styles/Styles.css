@@ -1,0 +1,113 @@
+/* Top Menu */
+
+[theme~="dark"] .hmTopMenu .vaadin-text-field iron-icon {
+	color: var(--lumo-tint-90pct);
+}
+
+[theme~="dark"] .hmTopMenu vaadin-button {
+	background: var(--lumo-tint-10pct);
+	color: var(--lumo-tint-90pct);
+}
+
+
+/* Left Menu */
+
+
+[theme~="dark"] .hmLeftMenu vaadin-button {
+	background: var(--lumo-tint-5pct);
+	color: var(--lumo-tint-90pct);
+}
+
+
+
+[theme~="dark"] .hmLeftMenu vaadin-vertical-layout.subMenu > vaadin-vertical-layout {
+	border-left: 1px solid var(--lumo-tint-30pct);
+}
+
+
+
+
+
+[theme~="dark"] .hmLeftMenu > label {
+	border-bottom-color: var(--lumo-tint-30pct);
+}
+
+
+
+
+/* Notification Center */
+[theme~="dark"] .hmNotificationCenter vaadin-button {
+	background: var(--lumo-shade-20pct);
+	color: var(--lumo-tint-90pct);
+}
+
+
+
+[theme~="dark"] .hmNotificationCenter .notification {
+	box-shadow: 0px 0px 2px var(--lumo-tint-70pct);
+	background: var(--lumo-shade-50pct);
+}
+
+.hmNotificationCenter .notification > iron-icon {
+    height: calc(100% - 16px);
+    border-right: 1px solid;
+    vertical-align: middle;
+    position: absolute;
+    padding: 0 8px 0 0;
+    font-size: 28px;
+    display: block;
+    margin: 8px;
+    width: 34px;
+    left: 0;
+    top: 0;
+}
+
+
+
+.hmNotificationCenter .notification vaadin-button {
+	background: transparent;
+    -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+	-moz-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+	-ms-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+	-o-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+	transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 0;
+}
+
+.hmNotificationCenter .notification vaadin-button:hover {
+	background: var(--lumo-error-color);
+	color: var(--lumo-error-contrast-color);
+}
+
+
+
+.hmNotificationCenter .footer vaadin-button {
+    -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+	-moz-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+	-ms-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+	-o-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+	transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    display: inline-block;
+    position: relative;
+    margin: 5px;
+}
+
+
+
+/* breadcrumbs */
+
+
+[theme~="dark"] .hmBreadcrumbs vaadin-button {
+	color: var(--lumo-tint-90pct);
+}
+
+
+
+
+
+
+
+

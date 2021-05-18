@@ -1,0 +1,6 @@
+ html {
+      --grid-header-cell-background-color: #ff0000;
+}
+[theme~="dark"] {
+      --grid-header-cell-background-color: #00ff00;
+}
